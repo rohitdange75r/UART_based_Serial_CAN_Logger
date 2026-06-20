@@ -7,6 +7,6 @@
 #define BOARD_PIN_MISO      19
 #define BOARD_PIN_SCLK      18
 #define BOARD_PIN_CS    5
-#define BOARD_PIN_INT_CAN   22
+#define BOARD_PIN_INT   22
 
 #endif
