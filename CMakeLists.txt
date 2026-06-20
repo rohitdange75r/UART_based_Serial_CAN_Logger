@@ -3,9 +3,9 @@
 cmake_minimum_required(VERSION 3.16)
 
 set(EXTRA_COMPONENT_DIRS 
-    "components/drivers"
+    "components/drivers/spi_driver"
     "components/bsp"
-    "components/sensors"
+    "components/sensors/mcp2515/mcp2515"
     
 
 )
