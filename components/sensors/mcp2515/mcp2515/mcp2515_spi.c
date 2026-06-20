@@ -24,6 +24,6 @@ void mcp2515_write_register(uint8_t reg_addr, uint8_t value)
 
 void mcp2515_bit_modify(uint8_t reg_addr, uint8_t mask, uint8_t value)
 {
-    uint8_t tx[4] = {MCP25115_CMD_BIT_MODIFY, reg_addr, mask, value};
+    uint8_t tx[4] = {MCP2515_CMD_BIT_MODIFY, reg_addr, mask, value};
     generic_spi_transfer(internal_spi_handle, tx, NULL, 4);
 }
