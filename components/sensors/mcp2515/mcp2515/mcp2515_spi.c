@@ -16,3 +16,14 @@ uint8_t mcp2515_read_register(uint8_t reg_addr)
     return rx[2];
 }
 
+void mcp2515_write_register(uint8_t reg_addr, uint8_t value)
+{
+    uint8_t tx[3] = {MCP2515_CMD_WRITE, reg_addr, value};
+    generic_spi_transfer(internal_spi_handle, tx, NULL, 3);
+}
+
+void mcp2515_bit_modify(uint8_t reg_addr, uint8_t mask, uint8_t value)
+{
+    uint8_t tx[4] = {MCP25115_CMD_BIT_MODIFY, reg_addr, mask, value};
+    generic_spi_transfer(internal_spi_handle, tx, NULL, 4);
+}
