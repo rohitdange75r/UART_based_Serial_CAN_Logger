@@ -1,5 +1,5 @@
-#ifndef MCP2515_H
-#define MCP2515_H
+#ifndef MCP2515_PRIV_H
+#define MCP2515_PRIV_H
 
 #include "spi_driver.h"
 
